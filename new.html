@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurumoorthy | Data Analyst Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #212529;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #0dcaf0 !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #0dcaf0 !important;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h1.section-title {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+      font-weight: 700;
+    }
+
+    h1.section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #0df01c;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn-info {
+      background-color: #37f00d;
+      border: none;
+    }
+
+    .btn-info:hover {
+      background-color: #0aa1c3;
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+      object-fit: contain;
+    }
+
+    .contact-section {
+      background-color: #212529;
+      color: #f8f9fa;
+      text-align: center;
+    }
+
+    .contact-section a {
+      color: #0dcaf0;
+    }
+
+    .social-icons a {
+      color: #f8f9fa;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .social-icons a:hover {
+      color: #0dcaf0;
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .hexagon-frame {
+      width: 260px;
+      height: 300px;
+      background-color: #0ef;
+      clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+      position: relative;
+      margin: 0 auto;
+      box-shadow: 0 0 30px #00f2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hexagon-frame::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #0ef;
+      clip-path: inherit;
+      filter: blur(30px);
+      z-index: -1;
+    }
+
+    .hexagon-frame .profile-img {
+      width: 85%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gurumoorthy</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container text-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h5>Hello, It's Me</h5>
+          <h1 class="fw-bold display-4">Gurumoorthy</h1>
+          <h4 class="text-info fw-semibold mb-4">And I'm a Data Analyst</h4>
+          <p>
+            I am a passionate data analyst who turns data into decisions using tools like Python, SQL, Tableau, Excel, and Power BI. I enjoy building clean, insightful dashboards and analytical tools that drive real impact.
+          </p>
+          <div class="social-icons mb-3">
+            <a href="https://www.linkedin.com/in/gurumoorthy-c2002" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rugu2368" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:guruganesh005@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <a href="/files/Gurumoorthy_CV.pdf" class="btn btn-info px-4 py-2 rounded-pill text-white fw-semibold shadow" download>Download CV</a>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="hexagon-frame">
+            <img src="/photos/pg.png" alt="Profile" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-dark text-white text-center">
+    <div class="container">
+      <h1 class="section-title">Projects</h1>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-secondary text-white h-100">
+            <img src="/photos/log.png" class="card-img-top" alt="Login System">
+            <div class="card-body">
+              <h5 class="card-title">Login System with Admin Approval</h5>
+              <p class="card-text">Built with Node.js, MySQL, JWT, and Nodemailer for secure authentication and user approval workflow.</p>
+              <a href="https://github.com/rugu2368/Login" class="btn btn-info" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-white h-100">
+            <img src="/photos/project1.png" class="card-img-top" alt="E-commerce Sales">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Sales Analysis</h5>
+              <p class="card-text">Created dashboards using Power BI & Tableau to visualize trends and insights from retail data.</p>
+              <a href="https://github.com/rugu2368/E-commerce-Sales-Analysis.git" class="btn btn-info" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-white h-100">
+            <img src="/photos/project2.png" class="card-img-top" alt="Website Analytics">
+            <div class="card-body">
+              <h5 class="card-title">Website Analytics</h5>
+              <p class="card-text">Used SQL to analyze traffic and user interaction for performance improvements.</p>
+              <a href="https://github.com/rugu2368/Website-Analysis.git" class="btn btn-info" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-white h-100">
+            <img src="/photos/project3.png" class="card-img-top" alt="Tableau Dashboards">
+            <div class="card-body">
+              <h5 class="card-title">Tableau Dashboards</h5>
+              <p class="card-text">Designed dashboards for business insights, including stock analysis and shipping metrics.</p>
+              <a href="https://github.com/rugu2368/Empowering-Business-Insights-with-Interactive-Tableau-Dashboards.git" class="btn btn-info" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-white h-100">
+            <img src="/photos/Dash.png" class="card-img-top" alt="Coffee Shop Sales">
+            <div class="card-body">
+              <h5 class="card-title">Coffee Shop Sales Dashboard</h5>
+              <p class="card-text">Interactive dashboard built in Excel showing KPIs and trends in coffee shop sales.</p>
+              <a href="https://github.com/rugu2368/Coffee-Shop-Sales-Dashboard/tree/main" class="btn btn-info" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-black text-white text-center">
+    <div class="container">
+      <h1 class="section-title">Skills</h1>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="skill-icon" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="skill-icon" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" class="skill-icon" alt="Excel">
+          <p>Excel</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" class="skill-icon" alt="Power BI">
+          <p>Power BI</p>
+        </div>
+        <div class="col-md-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" class="skill-icon" alt="Tableau">
+          <p>Tableau</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h1 class="section-title">Contact</h1>
+      <p>Email: <a href="mailto:guruganesh005@gmail.com">guruganesh005@gmail.com</a></p>
+      <p>Phone: +91 63856 52120</p>
+      <div class="social-icons mt-3">
+        <a href="https://www.linkedin.com/in/gurumoorthy-c2002" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rugu2368" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
